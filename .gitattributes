@@ -2,6 +2,7 @@
 Thumbs.db              export-ignore
 ehthumbs.db            export-ignore
 .DS_Store              export-ignore
+desktop.ini            export-ignore
 
 # Editor / IDE
 .vscode/               export-ignore

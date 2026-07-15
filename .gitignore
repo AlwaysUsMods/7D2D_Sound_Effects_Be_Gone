@@ -2,6 +2,7 @@
 Thumbs.db
 .DS_Store
 ehthumbs.db
+desktop.ini
 
 # VSCode
 .vscode/*

@@ -1,0 +1,47 @@
+# System files
+Thumbs.db
+.DS_Store
+ehthumbs.db
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+
+# Workspaces
+!*.code-workspace
+
+# Temporary and backup files
+*.bak
+*.tmp
+*.swp
+*.swo
+*.~*
+
+# Archives
+*.zip
+*.7z
+*.rar
+
+# Logs
+*.log
+
+# Ignore Git metadata
+.git/
+
+# Ignore compiled output (just in case)
+*.dll
+*.exe
+
+# Ignore manual metadata validator
+dev/xml_metadata_validator.py
+
+# Toolchain: Ignore local dev tools and dependencies
+Tools/
+**/node_modules/
+**/package-lock.json
+
+# Prettier / Formatting Configs
+**/.prettierrc
+**/.prettierrc.json
+**/.prettierrc.js
+**/.prettierignore

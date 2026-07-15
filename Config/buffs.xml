@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Demonata Gaming Metadata Format ©2025
+  Licensed for use under terms in LICENSE.md.
+-->
+<!--
+  ==================================================
+  Buffs - Player Effects Removal
+  @version     1.0.0
+  @date        2025-08-08
+  @author      Demonata Gaming
+  @group       Biome Enforced Player Effects
+  @description
+    Removes the player sound effects when entering biomes where 
+    the player has not completed the challenges for.
+  @notes
+    - Removes sound effects for walking and running.
+  ==================================================
+-->
+<configs>
+  <!--
+  ===============================
+  SECTION: Burnt Forest Player SFX
+  ===============================
+  @group     Sound Effect Removal
+  @desc      Removes sound effects from player entering the Burnt Forest.
+  @notes     This section applies only to the Burnt Forest.
+  -->
+  <remove xpath="/buffs/buff[@name='buffBurnt_Hazard01']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='AttachParticleEffectToEntity' and @particle='p_weatherEffects_smokeCough' and @sound='player#smoke']"/>
+  <remove xpath="/buffs/buff[@name='buffBurnt_Hazard02']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='AttachParticleEffectToEntity' and @particle='p_weatherEffects_smokeCough' and @sound='player#smoke']"/>
+  <remove xpath="/buffs/buff[@name='buffBurnt_Hazard02']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='PlaySound' and @sound='player#painsm']"/>
+  <!--
+  ===============================
+  SECTION: Desert Biome Player SFX
+  ===============================
+  @group     Sound Effect Removal
+  @desc      Removes sound effects from player entering the Desert Biome.
+  @notes     This section applies only to the Desert Biome.
+  -->
+  <remove xpath="/buffs/buff[@name='buffDesert_Hazard01']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='PlaySound' and @sound='player#hot']"/>
+  <remove xpath="/buffs/buff[@name='buffDesert_Hazard02']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='PlaySound' and @sound='player#hot']"/>
+  <remove xpath="/buffs/buff[@name='buffDesert_Hazard02']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='PlaySound' and @sound='player#painsm']"/>
+  <!--
+  ===============================
+  SECTION: Snow Biome Player SFX
+  ===============================
+  @group     Sound Effect Removal
+  @desc      Removes sound effects from player entering the Snow Biome.
+  @notes     This section applies only to the Snow Biome.
+  -->
+  <remove xpath="/buffs/buff[@name='buffSnow_Hazard01']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='AttachParticleEffectToEntity' and @particle='p_weatherEffects_freezingBreath' and @sound='player#cold']"/>
+  <remove xpath="/buffs/buff[@name='buffSnow_Hazard02']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='AttachParticleEffectToEntity' and @particle='p_weatherEffects_freezingBreath' and @sound='player#cold']"/>
+  <remove xpath="/buffs/buff[@name='buffSnow_Hazard02']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='PlaySound' and @sound='player#painsm']"/>
+  <!--
+  ===============================
+  SECTION: Wasteland Biome Player SFX
+  ===============================
+  @group     Sound Effect Removal
+  @desc      Removes sound effects from player entering the Wasteland Biome.
+  @notes     This section applies only to the Wasteland Biome.
+  -->
+  <remove xpath="/buffs/buff[@name='buffWasteland_Hazard01']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='PlaySound' and @sound='buff_geiger_counter']"/>
+  <remove xpath="/buffs/buff[@name='buffWasteland_Hazard02']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='PlaySound' and @sound='buff_geiger_counter']"/>
+  <remove xpath="/buffs/buff[@name='buffWasteland_Hazard02']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='PlaySound' and @sound='player#painsm']"/>
+</configs>
+
